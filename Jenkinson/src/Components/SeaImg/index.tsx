@@ -80,6 +80,22 @@ const SeaImg = () => {
         </div>
       </div>
       <div className={styles.box_OceanImg}>
+        <div className="row ">
+          <div className="col-12 col-lg-6">
+            <p className={styles.text}>We're</p>
+          </div>
+          <div className="col-12 col-lg-6">
+            <p className={styles.text2}>
+              be friends with the ocean,
+              <br className="mb-2" />
+              You
+              <br className="mb-2" />
+              And
+              <br className="mb-2" />
+              Me
+            </p>
+          </div>
+        </div>
       
         <div className={`row row-cols-1 row-cols-md-2 row-cols-lg-4 ${styles.videoContainer}`}>
           <div className="col">

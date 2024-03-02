@@ -128,7 +128,14 @@ margin: 0 auto;
     font-size: 20px;
     animation: heartbeat 1s infinite;
 }
-
+.text{
+    font-size: clamp(50px, 10rem, 10rem);
+    font-weight: 650;
+}
+.text2{
+    font-size: 50px;
+    font-weight: 650;
+}
 @keyframes heartbeat {
     0% {
         transform: scale(1);

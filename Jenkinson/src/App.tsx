@@ -1,10 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import SharkHome from './Components/Page/SharkHome';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SeaImg from './Components/SeaImg';
+import CategoryItem from './Components/Category/category';
 
 function App() {
   return (
-    <SharkHome/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/SeaImg" element={<SeaImg />} />
+        <Route path="/" element={<CategoryItem />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
