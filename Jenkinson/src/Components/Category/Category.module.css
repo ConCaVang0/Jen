@@ -1,0 +1,213 @@
+.category_item {
+  background: url("https://images.unsplash.com/photo-1611659934318-06fd70ced53c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+.border {
+  background-color: #004375;
+  color: white;
+}
+
+.recomend_filters span {
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.recomend_filters .current {
+  background-color: #212121;
+  color: #fff;
+}
+
+.section_item__separate {
+  border-bottom: 2px solid #888888;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto 0px;
+  width: 60px;
+  transition: all 0.5s ease 0s;
+  color:#0085B7
+}
+
+.section_item__separate {
+  font: 700 30px/28px 'Roboto', sans-serif;
+  white-space: nowrap;
+  line-height: 60px;
+
+}
+
+.section_item__separate:hover {
+  width: 120px;
+  /* Độ dài thêm 30px so với kích thước ban đầu */
+}
+
+.card {
+
+  margin: 0 8px 0 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  padding: 20px;
+}
+
+.card_badge1 {
+  position: absolute;
+  top: 54%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+}
+.card_badge2 {
+  position: absolute;
+  top: 54%;
+  left:53%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+}
+
+.card_title {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card_info {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.card_info i {
+  margin-right: 5px;
+  color: #004375;
+
+}
+
+.marine_lifeImg {
+  width: 100%;
+  height: 350px;
+  /* Chiều cao tự động để giữ tỷ lệ khung hình */
+
+}
+.review a {
+  color: initial; /* Màu chữ mặc định */
+  transition: color 0.3s ease; /* Hiệu ứng chuyển động */
+}
+.iconContainer {
+  display: flex;
+}
+
+.tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #0085B7;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.iconContainer span:hover .tooltip {
+  opacity: 1;
+}
+.review a:hover {
+  color: #03a9d7; /* Màu chữ khi hover */
+}
+.starIcon {
+  color: #FFA126;
+  margin-right: 3px;
+}
+
+.price {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  float: left;
+}
+
+.discount {
+  color: #999;
+}
+
+.rounded_image {
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.h3 {
+  font-size: 34px;
+  font-weight: 5 00;
+  letter-spacing: 0px;
+  text-transform: none;
+  color: #222222;
+}
+
+.animate {
+  opacity: 0;
+  /* Ban đầu ẩn các phần tử */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slider>button {
+  background-color: transparent;
+  z-index: 10;
+}
+
+.slider>button::before {
+  color: #0085B7;
+  font-size: 30px;
+}
+
+/* Xóa margin khỏi slide item cuối cùng */
+.alert_success {
+  display: inline-block;
+  margin: 0 auto;
+  position: fixed;
+  transition: all 0.5s ease-in-out 0s;
+  z-index: 2031;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.bg-info-transparent {
+  background-color: rgba(0, 123, 255, 0.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

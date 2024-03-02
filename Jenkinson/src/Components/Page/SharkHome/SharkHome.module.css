@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    margin: 20px 0px;
+    font-family: sans-serif;
+    height: 175vh;
+    
+    font-size: 20px;
+    /* background: rgba(179, 219, 237, 0.4); */
+    background: black;
+}
+
+.customContainer {
+    background: white
+    
+}
+
+
+.box {
+    margin: 20px;
+}
+
+.content {
+    line-height: 37px;
+}
+
+h4 {
+    margin-top: 20px;
+}
+.tab_review {
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thiết lập giá trị shadow bạn muốn */
+padding:20px
+}
+.icon_Sealife {
+position: relative;
+cursor: pointer;
+padding: 8px;
+border-radius: 50%;
+background-color: black ;
+color: white;
+font-size: 35px;
+animation: heartbeat 1s infinite;
+}
+.fes{
+    height: 816px
+    ;
+    width: 1300px;
+    object-fit: cover;
+}
+@keyframes heartbeat {
+0% {
+    transform: scale(1);
+}
+
+50% {
+    transform: scale(1.2);
+}
+
+100% {
+    transform: scale(1);
+}
+}

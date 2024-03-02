@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box_OceanImg {
+    padding: 0  75px; /* Giảm khoảng cách padding cho thiết bị di động */
+    margin: 0 auto;
+}
+
+img {
+    width: 100%; /* Sửa kích thước ảnh cho responsive */
+    height: auto;
+}
+
+
+.thumb_oceanImg {
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.thumb_oceanImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: all 0.3s linear;
+}
+.thumb_oceanImg:hover img{
+    transform: scale(1.1);
+}
+.edit_SeaImg {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: opacity 0.3s ease-in-out;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.thumb_oceanImg:hover .edit_SeaImg {
+    opacity: 1;
+}
+.banner_sealife {
+position: relative;
+}
+.banner_sealife img {
+    width: 100%;
+    max-height: 800px; /* Thêm max-height để tránh hình ảnh quá lớn */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.search_oceanImg {
+width: 80%; /* Bắt đầu bằng 80% để tăng khả năng co giãn */
+max-width: 650px; /* Giới hạn độ rộng tối đa */
+margin: 0 auto; /* Căn giữa */
+position: absolute;
+bottom: 7%; /* Khoảng cách từ dưới cùng */
+left: 50%; /* Đặt ở giữa */
+transform: translateX(-50%); /* Căn chính giữa theo chiều ngang */
+
+}
+
+.search_box {
+width: 100%; /* Sử dụng 100% chiều rộng của phần tử cha */
+max-width: 650px; 
+height: 40px;
+padding: 0 42px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+margin: 0 auto;
+
+}
+
+.slogan {
+    position: absolute;
+    
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    top: 40px;
+    left: 50%; /* Căn giữa trên màn hình */
+    transform: translateX(-50%);
+    text-align: center; /* Căn giữa văn bản */
+}
+
+.source_SeaImg {
+    font-weight: 650;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+
+}
+
+.SearchImg {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Đưa biểu tượng tìm kiếm lên chút ít */
+    transform: translateY(-50%);
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+.search-box::placeholder {
+    font-size: 18px;
+
+}
+
+.icon_Sealife {
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: white;
+    color: #ff6aa0;
+    font-size: 20px;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 767px) {
+.banner_sealife img {
+    max-height: 500px;
+}
+
+.search_oceanImg {
+    width: 70%;
+    bottom: 2%;
+}
+
+.slogan {
+    font-size: 16px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.thumb_oceanImg img {
+    width: 100%;
+    height: auto;
+}
+
+.edit_SeaImg {
+    width: 100%;
+    left: 0;
+    padding:0 15px;
+}
+
+.box {
+    padding: 0 20px; /* Điều chỉnh khoảng cách đối với màn hình nhỏ hơn */
+    margin: 0 auto;
+}
+
+.source_SeaImg {
+    font-size: 14px; /* Giảm kích thước font trên di động */
+}
+
+.icon_Sealife {
+    font-size: 16px; /* Điều chỉnh kích thước biểu tượng trên di động */
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.banner_sealife img {
+    max-height: 600px;
+}
+
+.search_oceanImg {
+    width: 80%; /* Điều chỉnh kích thước tìm kiếm trên tablet */
+    bottom: 5%;
+}
+
+.slogan {
+    font-size: 16px; /* Điều chỉnh kích thước font trên tablet */
+    top: 30px;
+}
+
+.thumb_oceanImg img {
+    width: 100%;
+    height: auto;
+}
+
+.edit_SeaImg {
+    width: 100%;
+    left: 0;
+
+}
+
+.source_SeaImg {
+    font-size: 10px; /* Điều chỉnh kích thước font trên tablet */
+    margin-bottom: -12px; /* Thêm margin phía dưới */
+}
+
+.icon_Sealife {
+    font-size: 10px; /* Điều chỉnh kích thước biểu tượng trên tablet */
+    margin-bottom: -12px; /* Thêm margin phía dưới */
+}
+}
